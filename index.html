@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    </head>
+    <body>
+        <script type="text/javascript">
+            if (navigator.language != null && navigator.language.length >= 2)
+            {
+                switch (navigator.language.substring(0, 2))
+                {
+                    case 'zh':
+                        window.location = '/zh/';
+                        break;
+
+                    default:
+                        window.location = '/en/';
+                        break;
+                }
+            }
+        </script>
+    </body>
+</html>
